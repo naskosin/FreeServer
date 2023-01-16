@@ -1125,10 +1125,10 @@
 
                         return result;
                     } else {
-                        throw new CredentialError$1('Email or password don\'t match');
+                        throw new CredentialError$1('Login or password don\'t match');
                     }
                 } else {
-                    throw new CredentialError$1('Email or password don\'t match');
+                    throw new CredentialError$1('Login or password don\'t match');
                 }
             }
 
@@ -1332,77 +1332,26 @@
     	}
     };
     var seedData = {
-		fishes:{
-		'b559bd24-5fb6-4a42-bc48-40c17dea649d': {
-			'_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-            'baitType': 'Spinner',
-            'bait': 'Mepps Aglia Copper',
-			'story': 'Up North, you’ll catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth.',
-			'img': 'https://www.anglingactive.co.uk/blog/wp-content/uploads/2017/03/aglia-copper_5-768x768.webp',
-            'fish_img': 'https://tiltfishing.com/wp-content/uploads/2020/01/Best-Ways-to-Catch-Trout.png',
-			'weight': 2,
-			'_createdOn': 1617797078108
-		},
-		'2949b54d-b163-4a00-b65c-41fb8b641561': {
-			'_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-            'baitType': 'Minnow',
-            'bait': 'Rapala CountDown Minnow',
-			'story': 'Shortly after in June, American Falls Reservoir produced yet another huge rainbow trout. Brett Jones landed a 31.25-inch monster trout, adding another record to the lake’s list of trophies.' ,
-			'fish_img': 'https://www.algomacountry.com/wp-content/uploads/2015/09/brook-trout-photo6.jpg',
-            'img':'https://www.anglingactive.co.uk/blog/wp-content/uploads/2017/03/cd_tr_3-768x768.webp',
-			'weight': 11,
-			'_createdOn': 1617799443179
-		},
+		pets:{
+		
 		'f6f54fcd-0469-470b-8ffa-a33ae6c7a524': {
 			'_ownerId': '847ec027-f659-4086-8032-5173e2f9c93a',
-            'baitType': 'Silicone',
-            'bait': 'Ratter Baits',
-			'story': 'Shortly after in June, American Falls Reservoir produced yet another huge rainbow trout. Brett Jones landed a 31.25-inch monster trout, adding another record to the lake’s list of trophies. ',
-            'img': 'https://cdn.shopify.com/s/files/1/0571/0512/1469/products/little-rat-22freshlures-478061_512x769.jpg?v=1641743378',
-            'fish_img': 'https://fishingbooker.com/blog/media/Freshwater-Chinook-Salmon-1200x675.jpg',
-            'weight': 5,
+			'name': 'Tyson',
+			'description': 'Species of parrots that are kept as companions include large parrots, such as amazons, greys, cockatoos, eclectus, hawk-headed parrots, and macaws; (Species include hybrids like the Catalina macaw) mid-sized birds, such as caiques, conures, quakers, Pionus, Poicephalus, rose-ringed parakeets, and rosellas; and many of the smaller types, including Brotogeris, budgies, cockatiels, parakeets, lovebirds, parrotlets and lineolated parakeets.',
+			'imageUrl': '/images/parrot.png',
+			'type': 'parrot',
 			'_createdOn': 1617799658349
 		},
 		'0e68a98c-3d56-4d3d-9d9f-256ae02a41b9': {
 			'_ownerId': '847ec027-f659-4086-8032-5173e2f9c93a',
-            'baitType': 'Spoon',
-            'bait': 'Ito Craft Chinook spoon',
-			'story': 'However, if I had to pick my favorite warmwater record fish of 2020, it would be the 42-inch flathead trout caught by Jared Holt of Homedale, Idaho from the Snake River in September.',
-			'img':'https://www.anglingactive.co.uk/blog/wp-content/uploads/2019/12/effzett_trout_spoon.webp',
-            'fish_img': 'https://www.anglersjournal.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY3NDQyNTk1MDc5NzkyMjQw/prm-iceland-brown-trout.jpg',
-            'weight': 7,
-            '_createdOn': 1617799822338
-        }
-      
-      
-       
-	},
-	comments: {
-        '0e68a98c-3d56-4d3d-9d9f-256ae02a43b9': {
-			'text': 'That was my greatest catch. It was epic fight',
-            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-            'baitId' :'0e68a98c-3d56-4d3d-9d9f-256ae02a41b',
-            'email' :'peter@abv.bg'
-		},
-        '0e68a98c-3d56-4d3d-9d9f-256ae02a42b8': {
-			'text': 'Strong one',
-            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-            'baitId' :'0e68a98c-3d56-4d3d-9d9f-256ae02a41b9',
-            'email' :'peter@abv.bg'
-		},
-        '0e68a98c-3d56-4d3d-9d9f-256ae02a43b7': {
-			'text': 'Incredible fight',
-            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-            'baitId' :'b559bd24-5fb6-4a42-bc48-40c17dea649d',
-            'email' :'peter@abv.bg'
-		},
-        '0e68a98c-3d56-4d3d-9d9f-256ae02a42b5': {
-			'text': 'Great fish',
-            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
-            'baitId' :'0e68a98c-3d56-4d3d-9d9f-256ae02a41b9',
-            'email' :'peter@abv.bg'
+			'name': 'Buddy',
+			'description': 'Dogs are sometimes referred to as "man\'s best friend" because they are kept as domestic pets and are usually loyal and like being around humans. Dogs like to be petted, but only when they can first see the petter\'s hand before petting; one should never pet a dog from behind.',
+			
+			'type': 'dog',
+			'_createdOn': 1617799822338
 		}
-    }
+	},
+	likes: {}
     };
     var rules$1 = {
     	users: {
