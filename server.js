@@ -1317,14 +1317,21 @@
     var rules = initPlugin$3;
 
     var identity = 'email';
-    var protectedData = {
+  var protectedData = {
     	users: {
     		'35c62d76-8152-4626-8712-eeb96381bea8': {
+                user: 'Peter',
     			email: 'peter@abv.bg',
     			hashedPassword: '83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1'
     		},
     		'847ec027-f659-4086-8032-5173e2f9c93a': {
+                user: 'John',
     			email: 'john@abv.bg',
+    			hashedPassword: '83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1'
+    		},
+            '847ec027-f659-4086-8032-5173e2f9c93b': {
+                user: 'Nasko',
+    			email: 'nasko@abv.bg',
     			hashedPassword: '83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1'
     		}
     	},
@@ -1332,26 +1339,65 @@
     	}
     };
     var seedData = {
-		pets:{
-		
+		articles:{
+		'b559bd24-5fb6-4a42-bc48-40c17dea649d': {
+			'_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+            'topic': 'Наредби и помощ',
+			'text': 'Up North, you’ll catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth.',
+			'img': 'https://www.anglingactive.co.uk/blog/wp-content/uploads/2017/03/aglia-copper_5-768x768.webp',
+			'_createdOn': 1617797078108
+		},
+		'2949b54d-b163-4a00-b65c-41fb8b641561': {
+			'_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+            'topic': 'Казуси',
+			'text': 'Up North, you’ll catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth.',
+			'img': 'https://www.anglingactive.co.uk/blog/wp-content/uploads/2017/03/aglia-copper_5-768x768.webp',
+			'_createdOn': 1617797078108
+		},
 		'f6f54fcd-0469-470b-8ffa-a33ae6c7a524': {
 			'_ownerId': '847ec027-f659-4086-8032-5173e2f9c93a',
-			'name': 'Tyson',
-			'description': 'Species of parrots that are kept as companions include large parrots, such as amazons, greys, cockatoos, eclectus, hawk-headed parrots, and macaws; (Species include hybrids like the Catalina macaw) mid-sized birds, such as caiques, conures, quakers, Pionus, Poicephalus, rose-ringed parakeets, and rosellas; and many of the smaller types, including Brotogeris, budgies, cockatiels, parakeets, lovebirds, parrotlets and lineolated parakeets.',
-			'imageUrl': '/images/parrot.png',
-			'type': 'parrot',
-			'_createdOn': 1617799658349
+            'topic': 'Пациенти',
+			'text': 'Up North,Up North, you’ll Up North, you’ll catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth.catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth. you’ll catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth.',
+			'img': 'https://www.anglingactive.co.uk/blog/wp-content/uploads/2017/03/aglia-copper_5-768x768.webp',
+			'_createdOn': 1617797078108
 		},
 		'0e68a98c-3d56-4d3d-9d9f-256ae02a41b9': {
 			'_ownerId': '847ec027-f659-4086-8032-5173e2f9c93a',
-			'name': 'Buddy',
-			'description': 'Dogs are sometimes referred to as "man\'s best friend" because they are kept as domestic pets and are usually loyal and like being around humans. Dogs like to be petted, but only when they can first see the petter\'s hand before petting; one should never pet a dog from behind.',
-			
-			'type': 'dog',
-			'_createdOn': 1617799822338
-		}
+            'topic': 'Въпроси и отговори',
+			'text': 'Up North, you’ll catch plenty of fish – just be careful the fish don’t catch you. In fact, a few summers ago a fisherman on Great Bear Lake landed a trout that weighed a whopping 38 kilos. That’s 83 pounds. Huge, right? But really, it’s no wonder. Northern lakes have long been known to produce the largest sportfish on Earth.',
+			'img': 'https://www.anglingactive.co.uk/blog/wp-content/uploads/2017/03/aglia-copper_5-768x768.webp',
+			'_createdOn': 1617797078108
+        }
+      
+      
+       
 	},
-	likes: {}
+	comments: {
+        '0e68a98c-3d56-4d3d-9d9f-256ae02a43b9': {
+			'text': 'That was my greatest catch. It was epic fight',
+            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+            'baitId' :'0e68a98c-3d56-4d3d-9d9f-256ae02a41b',
+            'email' :'peter@abv.bg'
+		},
+        '0e68a98c-3d56-4d3d-9d9f-256ae02a42b8': {
+			'text': 'Strong one',
+            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+            'baitId' :'0e68a98c-3d56-4d3d-9d9f-256ae02a41b9',
+            'email' :'peter@abv.bg'
+		},
+        '0e68a98c-3d56-4d3d-9d9f-256ae02a43b7': {
+			'text': 'Incredible fight',
+            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+            'baitId' :'b559bd24-5fb6-4a42-bc48-40c17dea649d',
+            'email' :'peter@abv.bg'
+		},
+        '0e68a98c-3d56-4d3d-9d9f-256ae02a42b5': {
+			'text': 'Great fish',
+            '_ownerId': '35c62d76-8152-4626-8712-eeb96381bea8',
+            'baitId' :'0e68a98c-3d56-4d3d-9d9f-256ae02a41b9',
+            'email' :'peter@abv.bg'
+		}
+    }
     };
     var rules$1 = {
     	users: {
